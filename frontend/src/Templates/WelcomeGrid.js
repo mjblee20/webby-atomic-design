@@ -1,22 +1,26 @@
 // Import Dependencies
 import React from 'react';
 
-// Import Styles
+// Import Stylings
 import './WelcomeGrid.css';
 
 // Import Components
 import LinkToButton from '../Atoms/LinkToButton';
 
-{/* Welcome Page! With Animations!*/}
+/* Welcome Page! With Animations!*/
 const WelcomeGrid = (props) => {
   return(
-    <div className='home-grid'>
-      
-      <div className='welcome-container'>
-        <LinkToButton>Welcome!</LinkToButton>
-      </div>
+      <div className='welcome-grid'>
 
-    </div>
+        <div className='welcome-container'>
+          <LinkToButton route='/home'>Welcome!</LinkToButton>
+        </div>
+
+
+        <div className='info-row'>
+        
+        </div>
+      </div>
   )
 }
 

@@ -5,12 +5,13 @@ import React from 'react';
 import './Home.css';
 
 // Import Components
+import HomeGrid from '../Templates/HomeGrid';
 
 
-const Home = (props) => {
+const Home = () => {
   return(
     <div>
-      
+      <HomeGrid />
     </div>
   )
 }

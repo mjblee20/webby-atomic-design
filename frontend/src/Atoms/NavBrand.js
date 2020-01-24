@@ -1,9 +1,18 @@
+// Import Dependencies
 import React from 'react';
-import { Link } from 'react-router-dom'
 
+// Import Stylings
+import './NavBrand.css';
+
+// Import Components
+import { NavLink } from 'react-router-dom';
 
 const NavBrand = (props) => {
-  return <Link id='NavBrand' href>{props.children}</Link>
+  return(
+    <div>
+      <NavLink exact to='/' />
+    </div>
+  )
 }
 
 export default NavBrand;

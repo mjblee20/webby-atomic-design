@@ -1,0 +1,52 @@
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+  
+}
+
+@media (min-width: 960px) {
+  
+}
+
+/* Styles */
+/* TODO: separate them into corresponding css files */
+.blog-page-container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-gap: 10px;
+}
+
+/*  */
+.blog-posts-container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-gap: 10px;
+}
+
+/* Container for all previous posts */
+.posts-container {
+  display: grid;
+}
+
+/* Each post's container */
+.post {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px;
+}
+
+/* Avatar's styling */
+.poster {
+  background: var(--gray);
+}
+
+/* Even number post's styling */
+.post-content {
+  background: var(--lightgray);
+  padding: 10px;
+}
+
+/* Odd number post's styling */
+.post:nth-of-type(odd) > .post-content {
+  background: var(--white);
+  padding: 10px;
+}

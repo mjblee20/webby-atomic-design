@@ -1,36 +1,36 @@
 /* Layout styles -----------------------------------*/
 @media (min-width: 620px) {
-  main {
+  /* main {
     column-count: 2;
     column-gap: 20px;
   }
   
   section {
     break-inside: avoid;
-  }
+  } */
 }
 
 @media (min-width: 960px) {
-  main {
+  /* main {
      column-count: 3;
-  }
+  } */
 }
 
 /* styles */
 
-:root {
-  --light: #EAE7DC;
-  --lightbrown: #D8C3A5;
-  --gray: #8E8D8A;
-  --pink: #E98074;
-  --red: #E85A4F;
+body {
+  /* padding-top: 70px; */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  /* TODO: Figure out what they do */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-color: var(--blue);
-  font-family: 'Ubuntu', sans-serif;
-  color: #34495e;
-}
+/* 
 
 main {    
   max-width: 1200px;
@@ -123,4 +123,4 @@ section {
   .options-link {
     font-size: 1.4em;
   }
-}
+} */

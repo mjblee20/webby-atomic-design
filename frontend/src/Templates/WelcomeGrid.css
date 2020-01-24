@@ -1,2 +1,30 @@
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+  
+}
+
+@media (min-width: 960px) {
+  
+}
+
+/* Styles */
+.welcome-grid {
+  /* display: grid; */
+  background: var(--white);
+  margin:0;
+}
+
+.welcome-container {
+  /* position: absolute;
+  width: 100%;
+  height: 100%; */
+}
+
+
+.nav-icon {
+  position: absolute;
+  z-index: 100;
+}
+
 /* TODO: Hide the Navbar for Welome Page */
 

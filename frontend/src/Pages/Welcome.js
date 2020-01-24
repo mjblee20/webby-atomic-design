@@ -6,11 +6,10 @@ import WelcomeGrid from '../Templates/WelcomeGrid'
 
 // Imports Styling 
 
-/**
- * @param {Object} props 
- */
-const Welcome = (props) => {
-  return(<WelcomeGrid />);
+const Welcome = () => {
+  return(
+    <WelcomeGrid />
+  );
 }
 
 export default Welcome;

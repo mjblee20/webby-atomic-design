@@ -1,13 +1,14 @@
 // Import Dependencies
 import React from 'react';
 
+// Import Stylings
+import './ContactGrid.css';
+
 // Import Components
 
 
-// Import Stylings
-import './NavbarGrid.css';
 
-const NavbarGrid = (props) => {
+const ContactGrid = (props) => {
   return(
     <div>
       
@@ -15,4 +16,4 @@ const NavbarGrid = (props) => {
   )
 }
 
-export default NavbarGrid;
+export default ContactGrid;

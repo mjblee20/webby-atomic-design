@@ -1,25 +1,39 @@
 // Import Dependencies
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 // Import Stylings
 import './App.css';
 
 //Import Components
-import Welcome from '../../frontend/src/Pages/Welcome';
+import Welcome from './Pages/Welcome';
+import Home from './Pages/Home';
+import HorizNavGrid from './Templates/HorizNavGrid';
+import Blog from './Pages/Blog';
+import BtnNavGrid from './Templates/BtnNavGrid';
 
 function App() {
   return (
     <Router>
-      {/* This is going to be where Navbar is at */}
-      
+      {/* <HorizNavGrid /> */}
+      <BtnNavGrid />
+
       <main>
         <Switch>
-          <Router exact path='/' component={Welcome}/>
-          {/* <Router exact path='/about' component={About} /> */}
+          <Route exact path='/'>
+            <Welcome />
+          </Route>
+          <Route path='/home'>
+            <Home />
+          </Route>
+
+          <Route path='/blog'>
+            <Blog />
+          </Route>
+          {/* <Route exact path='/about' component={About} /> */}
 
           
-          {/* <Router path='/pageDNE' component={PageDNE} /> */}
+          {/* <Route path='/pageDNE' component={PageDNE} /> */}
           {/* <Redirect to='/pageDNE' /> */}
         </Switch>
       </main>

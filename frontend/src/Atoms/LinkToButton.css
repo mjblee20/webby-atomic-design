@@ -1,8 +1,4 @@
 #transform-container {
-  margin: 0;
-  padding: 2rem;
-}
-#transform-container {
   display: flex;
   align-items: center;
   justify-content: center;
