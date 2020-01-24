@@ -1,13 +1,13 @@
 // Import Dependencies
 import React from 'react';
 
-// Import Stylings
-import './Home.css';
-
 // Import Components
 
 
-const Home = (props) => {
+// Import Stylings
+import './NavbarGrid.css';
+
+const NavbarGrid = (props) => {
   return(
     <div>
       
@@ -15,6 +15,4 @@ const Home = (props) => {
   )
 }
 
-export default Home;
-
-
+export default NavbarGrid;

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
 
 import './App.css';
+import Welcome from './Pages/Welcome';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       </MainHeader>
       <main>
         <Switch>
-          <Router exact path='/' component={Home}/>
+          <Router exact path='/' component={Welcome}/>
           <Router exact path='/about' component={About} />
 
           
