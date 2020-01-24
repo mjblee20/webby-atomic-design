@@ -1,7 +1,7 @@
 @media (min-width: 620px) {
   .home-grid {
-    column-count: 2;
-    column-gap: 20px;
+    /* column-count: 1; */
+    
   }
   
   section {
@@ -10,9 +10,7 @@
 }
 
 @media (min-width: 960px) {
-  .home-grid {
-     column-count: 3;
-  }
+
 }
 
 /* Styles */
@@ -22,15 +20,6 @@
   grid-template-rows: 120px 2fr 120px;
   height: 100vh;
   background: var(--white);
-}
-
-.header-container {
-  grid-column: 1/3;
-  grid-row: 1;
-  background: transparent;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .position-progress-bar {
@@ -43,14 +32,13 @@
 }
 
 .home-content-container {
-  grid-column: 1/3;
   grid-row: 2;
   background: var(--white);
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .footer-container {
-  grid-column: 1/3;
   grid-row: 3;
   background: transparent;
   justify-content: center;

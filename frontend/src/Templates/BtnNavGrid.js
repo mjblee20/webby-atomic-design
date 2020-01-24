@@ -30,7 +30,7 @@ const BtnNavGrid = (props) => {
         </div>
         <div className="page-title">
           <h1>
-            Title
+            MJB.
           </h1>
         </div>
       </div>
@@ -57,6 +57,13 @@ const BtnNavGrid = (props) => {
               <NavLink className='side-nav-links' to='/about'>
                 <span>
                   About
+                </span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className='side-nav-links' to='/portfolio'>
+                <span>
+                  Portfolio
                 </span>
               </NavLink>
             </li>

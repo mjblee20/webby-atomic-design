@@ -11,6 +11,10 @@ import Home from './Pages/Home';
 import HorizNavGrid from './Templates/HorizNavGrid';
 import Blog from './Pages/Blog';
 import BtnNavGrid from './Templates/BtnNavGrid';
+import About from './Pages/About';
+import Portfolio from './Pages/Portfolio';
+import Contact from './Pages/Contact';
+import PageDNE from './Pages/PageDNE'
 
 function App() {
   return (
@@ -30,11 +34,12 @@ function App() {
           <Route path='/blog'>
             <Blog />
           </Route>
-          {/* <Route exact path='/about' component={About} /> */}
+
+          <Route exact path='/about' component={About} />
 
           
-          {/* <Route path='/pageDNE' component={PageDNE} /> */}
-          {/* <Redirect to='/pageDNE' /> */}
+          <Route path='/pageDNE' component={PageDNE} />
+          <Redirect to='/pageDNE' />
         </Switch>
       </main>
     </Router>
