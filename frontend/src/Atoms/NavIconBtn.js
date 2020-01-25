@@ -4,9 +4,9 @@ import './NavIconBtn.css';
 
 const NavIconBtn = (props) => {
   return(
-    <button className='nav-icon-btn'>
+    <div className='nav-icon-btn'>
       {props.children}
-    </button>
+    </div>
   )
 }
 

@@ -28,9 +28,9 @@ const BtnNavGrid = (props) => {
           <NavIconBtn>&#9776;</NavIconBtn>
         </div>
         <div className="page-title">
-          <h1>
+          <p>
             MJB.
-          </h1>
+          </p>
         </div>
       </div>
 
