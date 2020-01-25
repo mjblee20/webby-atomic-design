@@ -8,7 +8,7 @@
   --gray:         #454851;
   --black:        #020202;
   --brown:        #22181C;
-  --darkpurple:   #484860;
+  --darkpurple:   #A18276;
   --blue:         #457B9D;
   --teal:         #78a8a8;
   --white:        #FBF2C0;
@@ -24,7 +24,7 @@ body { min-height: 100%; }
 * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Playfair Display', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
@@ -37,4 +37,27 @@ main {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/**
+  USAGE EXAMPLE:
+   .skill-item:hover {
+  Start the shake animation and make the animation last for 0.5 seconds
+  animation: shake 0.5s;
+
+  When the animation is finished, start again
+  animation-iteration-count: infinite;
+ */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

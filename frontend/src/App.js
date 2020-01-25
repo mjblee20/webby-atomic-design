@@ -16,6 +16,7 @@ import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
 import PageDNE from './Pages/PageDNE'
+import Styles from './Pages/Styles';
 
 function App() {
   return (
@@ -48,7 +49,10 @@ function App() {
           <Route path='/blog'>
             <Blog />
           </Route>
-          <Route exact path='/about' component={About} />
+
+          <Route path='/styles'>
+            <Styles />
+          </Route>
 
           
           <Route path='/pageDNE' component={PageDNE} />

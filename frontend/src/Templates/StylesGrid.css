@@ -1,12 +1,12 @@
-.portfolio-grid-container{
+.styles-grid-container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 120px auto 120px;
   height: 100vh;
-  background: var(--orangered);
+  background: var(--yellow);
 }
 
-.portfolio-body {
+.styles-body {
   grid-row: 2;
   grid-column: 1 / span 12;
 }

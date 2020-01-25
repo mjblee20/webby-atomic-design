@@ -67,9 +67,9 @@ const BtnNavGrid = (props) => {
               </NavLink>
             </li>
             <li>
-              <NavLink className='side-nav-links' to='/contact'>
+              <NavLink className='side-nav-links' to='/styles'>
                 <span>
-                  Contact
+                  Styles
                 </span>
               </NavLink>
             </li>
@@ -77,6 +77,13 @@ const BtnNavGrid = (props) => {
               <NavLink className='side-nav-links' to='/blog'>
                 <span>
                   Blog
+                </span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className='side-nav-links' to='/contact'>
+                <span>
+                  Contact
                 </span>
               </NavLink>
             </li>

@@ -105,7 +105,7 @@
 .btn-draw:hover {
   color: rgba(57, 62, 70, 1);
   text-decoration: none;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px var(--black);
   /* background-color: rgba(57, 62, 70, 1); */
   transition: box-shadow 0.3s ease-in-out;
   transition-delay: 0.6s;

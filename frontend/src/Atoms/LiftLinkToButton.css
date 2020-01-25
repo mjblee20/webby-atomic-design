@@ -10,12 +10,12 @@
   display: inline-block;
   border: 3px solid transparent;
   position: relative;
-  font-size: 1.5em;
+  font-size: 23px;
   cursor: pointer;
   letter-spacing: 0.07em;
 }
 .portfolio-experiment a .text {
-  font-family: proxima-nova, monospace;
+  font-family: 'Playfair Display', serif;
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -27,13 +27,13 @@
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: #f26522;
+  background: white;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 .portfolio-experiment .line {
   position: absolute;
-  background: #f26522;
+  background: white;
 }
 .portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
   width: 3px;
@@ -97,3 +97,11 @@
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }
+
+/* Makes the button more 3D */
+/* .portfolio-experiment:hover {
+  text-decoration: none;
+  box-shadow: 10px 5px 5px var(--black);
+  transition: box-shadow 0.3s ease-in-out;
+  transition-delay: 0.6s;
+} */

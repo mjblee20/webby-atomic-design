@@ -2,28 +2,28 @@
 import React from 'react';
 
 // Import Stylings
-import './ContactGrid.css';
+import './StylesGrid.css';
 import PageHeader from '../Organisms/PageHeader';
+import HomeSections from '../Organisms/HomeSections';
 import PageFooter from '../Organisms/PageFooter';
 
 // Import Components
 
 
 
-const ContactGrid = (props) => {
+const StylesGrid = (props) => {
   return(
-    <div className='contact-grid-container'>
+    <div className='styles-grid-container'>
 
-      <PageHeader title='Contact' />
-      
-      <div className='contact-body' />
+      <PageHeader title='Styles' />
       
       {/* TODO: Eventually it's own js file */}
+      <div className='styles-body'></div>
+      
 
       <PageFooter title='Footer' />
-
     </div>
   );
 }
 
-export default ContactGrid;
+export default StylesGrid;
