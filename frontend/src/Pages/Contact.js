@@ -3,6 +3,7 @@ import React from 'react';
 
 // Import Stylings
 import './Contact.css';
+import ContactGrid from '../Templates/ContactGrid';
 
 // Import Components
 
@@ -10,7 +11,7 @@ import './Contact.css';
 const Contact = (props) => {
   return(
     <div>
-      <h1>Contact Me</h1>
+      <ContactGrid />
     </div>
   )
 }

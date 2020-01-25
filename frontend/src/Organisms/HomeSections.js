@@ -7,35 +7,35 @@ const SECTIONS = [
   {
     title: 'ABOUT',
     route: '/about',
-    color: '#FE4A49'
+    color: 'var(--darkpurple)'
   },
   {
     title: 'PORTFOLIO',
     route: '/portfolio',
-    color: '#FFBA49'
+    color: 'var(--orangered)'
   },
   {
-    title: 'CONTACT',
-    route: '/contact',
-    color: '#20A39E'
+    title: 'STYLES',
+    route: '/styles',
+    color: 'var(--teal)'
   },
   {
     title: 'BLOG',
     route: '/blog',
-    color: '#073B3A'
+    color: 'var(--yellow)'
   },
   {
-    title: 'HOMEPAGE STYLES',
-    route: '/styles',
-    color: '#0081AF'
+    title: 'CONTACT',
+    route: '/contact',
+    color: 'var(--lightergray)'
   }
 ]
 
 const HomeSections = (props) => {
   return (
-    <div>
+    <div className='home-content-container'>
       {SECTIONS.map(section => (
-        <HomeSectionChoice title={section.title} route={section.route} color={section.color} />
+        <HomeSectionChoice title={section.title} route={section.route} color={section.color}/>
       ))}
     </div>
   )

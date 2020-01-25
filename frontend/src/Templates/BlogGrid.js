@@ -2,6 +2,8 @@
 import React from 'react';
 
 import './BlogGrid.css';
+import PageHeader from '../Organisms/PageHeader';
+import PageFooter from '../Organisms/PageFooter';
 
 const posts = [
   {
@@ -33,12 +35,7 @@ const BlogGrid = () => {
   return(
     <div className='blog-page-container'>
 
-      {/* TODO: Eventually it's own Organism js file */}
-      <div className='blog-header-container'>
-        <div>
-          <h1>Header</h1>
-        </div>
-      </div>
+      <PageHeader title='Blog' />
 
         {/* TODO: Eventually it's own Compound js file */}
         <div className='blog-posts-container'>
@@ -47,7 +44,24 @@ const BlogGrid = () => {
             /* TODO: Eventually it's own Compound js file */
             <div className='post'>
               {/* TODO: Eventually it's own Atom js file */}
-              <div className='poster'>{post.avatar}</div>
+              <div className='poster-row'>
+                <div className='avatar'>
+                  <div className='headshot'> 
+                    {post.avatar}
+                  </div>
+                </div>
+                <div className='poster-info'>
+                  <div className='poster'>
+                    Poster
+                  </div>
+                  <div className='post-time'>
+                    Post Time
+                  </div>
+                </div>
+                
+
+                
+              </div>
               {/* TODO: Eventually it's own Atom js file */}
               <div className='post-content'>{post.content}</div>
             </div>
@@ -55,12 +69,8 @@ const BlogGrid = () => {
           ))}
         </div>
 
-      {/* TODO: Eventually it's own Organism js file */}
-      <div className='blog-footer-container'>
-        <div>
-          <h1>Footer</h1>
-        </div>
-      </div>
+      <PageFooter title='Footer' />
+
     </div>
   );
 }

@@ -7,7 +7,6 @@ import './BtnNavGrid.css';
 
 const BtnNavGrid = (props) => {
   const [isToggled, setToggle] = useState(false);
-  const [isHovered, setHover] = useState(false);
 
   /**
    * When nav-icon is clicked trigger this

@@ -3,6 +3,7 @@ import React from 'react';
 
 // Import Stylings
 import './About.css';
+import AboutGrid from '../Templates/AboutGrid';
 
 // Import Components
 
@@ -10,7 +11,7 @@ import './About.css';
 const About = (props) => {
   return(
     <div>
-      <h1>About Me</h1>
+      <AboutGrid />
     </div>
   )
 }

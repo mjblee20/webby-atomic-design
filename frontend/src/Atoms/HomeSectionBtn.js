@@ -1,12 +1,16 @@
 import React from 'react';
 
-import { NavLink } from 'react-router-dom';
-
 import './HomeSectionBtn.css';
+import LiftLinkToButton from './LiftLinkToButton';
 
 const HomeSectionBtn = (props) => {
   return(
-    <NavLink className='home-section-btn' to={props.route}>{props.title}</NavLink>
+    <LiftLinkToButton 
+      className='home-section-btn' 
+      route={props.route}
+    >
+      {props.title}
+    </LiftLinkToButton>
   );
 }
 

@@ -3,6 +3,8 @@ import React from 'react';
 
 // Import Stylings
 import './ContactGrid.css';
+import PageHeader from '../Organisms/PageHeader';
+import PageFooter from '../Organisms/PageFooter';
 
 // Import Components
 
@@ -10,10 +12,18 @@ import './ContactGrid.css';
 
 const ContactGrid = (props) => {
   return(
-    <div>
+    <div className='contact-grid-container'>
+
+      <PageHeader title='Contact' />
       
+      <div className='body' />
+      
+      {/* TODO: Eventually it's own js file */}
+
+      <PageFooter title='Footer' />
+
     </div>
-  )
+  );
 }
 
 export default ContactGrid;

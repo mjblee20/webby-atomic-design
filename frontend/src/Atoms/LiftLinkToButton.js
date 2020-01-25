@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './LinkToButton1.css';
+import './LiftLinkToButton.css';
 
-const LinkToButton1 = (props) => {
+const LiftLinkToButton = (props) => {
   return(
     <section className="portfolio-experiment">
-      <Link to='/homepage'>
+      <Link to={props.route}>
         <span className="text">{props.children}</span>
         <span className="line -right"></span>
         <span className="line -top"></span>
@@ -17,4 +17,4 @@ const LinkToButton1 = (props) => {
   )
 }
 
-export default LinkToButton1;
+export default LiftLinkToButton;

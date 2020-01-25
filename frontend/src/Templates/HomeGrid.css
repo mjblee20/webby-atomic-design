@@ -16,10 +16,10 @@
 /* Styles */
 .home-grid-container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 120px 2fr 120px;
+  grid-template-rows: 1fr;
   height: 100vh;
-  background: var(--white);
+  background: #FBF2C0;
+  color: var(--black);
 }
 
 .position-progress-bar {
@@ -28,14 +28,7 @@
   top: 60px;
   width: 20px;
   height: 160px;
-  background: var(--black)
-}
-
-.home-content-container {
-  grid-row: 2;
-  background: var(--white);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  background: transparent;
 }
 
 .footer-container {

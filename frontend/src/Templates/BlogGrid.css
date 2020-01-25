@@ -11,15 +11,18 @@
 /* TODO: separate them into corresponding css files */
 .blog-page-container {
   display: grid;
-  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 120px auto 120px;
   grid-gap: 10px;
+  background: var(--white);
 }
 
 /*  */
 .blog-posts-container {
   display: grid;
-  grid-template-rows: 1fr auto 1fr;
-  grid-gap: 10px;
+  grid-row: 2;
+  grid-column: 1 / span 12;
+  padding: 15px;
 }
 
 /* Container for all previous posts */
@@ -34,9 +37,33 @@
   grid-gap: 10px;
 }
 
+.poster-row {
+  display: flex;
+  /* align-items: center; */
+  background: var(--orangered); /* TODO: eventually fix the coloring */
+}
+
+.poster-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 /* Avatar's styling */
-.poster {
-  background: var(--gray);
+.avatar {
+  /* TODO: Center the image and add margin */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background: var(--blue);
+
+}
+.headshot {
+  width: 100px;
+  height: 100px;
 }
 
 /* Even number post's styling */
@@ -47,6 +74,6 @@
 
 /* Odd number post's styling */
 .post:nth-of-type(odd) > .post-content {
-  background: var(--white);
+  background: var(--lightergray);
   padding: 10px;
 }

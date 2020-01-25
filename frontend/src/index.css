@@ -1,13 +1,18 @@
 /* styles */
 
 :root {
-  --red: #CA2E55;
-  --white: #F1FAEE;
-  --lightgray: #6F7D8C;
-  --gray: #454851;
-  --brown: #22181C;
-  --black: #020202;
-  --blue: #457B9D;
+  --lightergray:  #a8a8a8;
+  --lightgray:    #6F7D8C;
+  --gray:         #454851;
+  --black:        #020202;
+  --brown:        #22181C;
+  --darkpurple:   #484860;
+  --blue:         #457B9D;
+  --teal:         #78a8a8;
+  --white:        #FBF2C0;
+  --yellow:       #d8a860;
+  --orangered:    #d86060;
+  --red:          #CA2E55;
 }
 
 /* Two important CSS properties to set for full height pages */

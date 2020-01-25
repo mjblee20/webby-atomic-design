@@ -1,0 +1,9 @@
+
+.about-grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px 2fr 120px;
+  height: 100vh;
+  background: var(--white);
+  color: var(--black);
+}

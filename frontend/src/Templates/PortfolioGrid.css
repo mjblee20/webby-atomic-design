@@ -1,4 +1,13 @@
-.portfolio-grid {
+.portfolio-grid-container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 120px auto 120px;
+  height: 100vh;
+  background: var(--white);
+  
+}
+
+.portfolio-body {
+  grid-row: 2;
+  grid-column: 1 / span 12;
 }

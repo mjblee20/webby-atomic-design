@@ -15,11 +15,7 @@ const WelcomeGrid = (props) => {
         <div className='welcome-container'>
           <LinkToButton route='/home'>Welcome!</LinkToButton>
         </div>
-
-
-        <div className='info-row'>
         
-        </div>
       </div>
   )
 }

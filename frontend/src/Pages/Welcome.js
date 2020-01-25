@@ -8,7 +8,9 @@ import WelcomeGrid from '../Templates/WelcomeGrid'
 
 const Welcome = () => {
   return(
-    <WelcomeGrid />
+    <div>
+      <WelcomeGrid />
+    </div>
   );
 }
 

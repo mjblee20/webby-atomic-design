@@ -2,28 +2,27 @@
 import React from 'react';
 
 // Import Stylings
-import './HomeGrid.css';
+import './AboutGrid.css';
 import PageHeader from '../Organisms/PageHeader';
-import HomeSections from '../Organisms/HomeSections';
 import PageFooter from '../Organisms/PageFooter';
 
 // Import Components
 
 
 
-const HomeGrid = (props) => {
+const AboutGrid = (props) => {
   return(
-    <div className='home-grid-container'>
+    <div className='about-grid-container'>
 
-      {/* <PageHeader title='Home' /> */}
+      <PageHeader title='Header' />
       
-      <HomeSections />
+      <div className='body'></div>
       
       {/* TODO: Eventually it's own js file */}
 
-      {/* <PageFooter title='Footer' /> */}
+      <PageFooter title='Footer' />
     </div>
   );
 }
 
-export default HomeGrid;
+export default AboutGrid;

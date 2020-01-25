@@ -9,7 +9,6 @@
 
 /* Styles */
 .welcome-grid {
-  /* display: grid; */
   background: var(--white);
   margin:0;
 }

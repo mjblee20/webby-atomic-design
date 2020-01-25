@@ -5,6 +5,7 @@
 }
 .portfolio-experiment a {
   color: white;
+  text-decoration: none;
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;

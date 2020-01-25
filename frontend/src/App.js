@@ -7,10 +7,11 @@ import './App.css';
 
 //Import Components
 import Welcome from './Pages/Welcome';
-import Home from './Pages/Home';
+// import Home from './Pages/Home';
 import HorizNavGrid from './Templates/HorizNavGrid';
 import Blog from './Pages/Blog';
 import BtnNavGrid from './Templates/BtnNavGrid';
+import Home from './Pages/Home';
 import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
@@ -27,14 +28,26 @@ function App() {
           <Route exact path='/'>
             <Welcome />
           </Route>
+
           <Route path='/home'>
             <Home />
+          </Route>
+
+          <Route path='/about'>
+            <About />
+          </Route>
+
+          <Route path='/portfolio'>
+            <Portfolio />
+          </Route>
+
+          <Route path='/contact'>
+            <Contact />
           </Route>
 
           <Route path='/blog'>
             <Blog />
           </Route>
-
           <Route exact path='/about' component={About} />
 
           
