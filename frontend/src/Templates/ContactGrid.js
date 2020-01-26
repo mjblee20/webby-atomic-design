@@ -14,9 +14,16 @@ const ContactGrid = (props) => {
   return(
     <div className='contact-grid-container'>
 
-      <PageHeader title='Contact' />
+      <PageHeader title='Contact'  color='var(--teal)'/>
       
-      <div className='contact-body' />
+      <div className='contact-body'>
+        {/* Image */}
+        {/* Background */}
+        {/* Interests */}
+        {/* Contact Info */}
+        {/* Fun animation */}
+        Rest of content
+      </div>
       
       {/* TODO: Eventually it's own js file */}
 

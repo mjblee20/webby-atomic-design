@@ -1,40 +1,66 @@
 .about-grid-container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 120px 2fr 120px;
+  /* 40px: outer margin layer */
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-auto-rows: min-content;
   min-height: 100vh;
-  background: var(--darkpurple);
+  min-width: 100%;
+  background: var(--white);
   color: var(--black);
 }
 
-.about-body-container {
-  display: grid;
-  grid-row: 2;
-  grid-column: 1 / span 12;
-  padding: 10%;
+.about-grid-container:nth-last-child(1) {
+  grid-column: 1 / span 5;
 }
 
 
 /* Bio Section Styling */
-.bio-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.self-portrait {
+  grid-column: 1 / span 5;
 }
 
-.self-portrait {
-  grid-column: 1 / span 12;
-  grid-row: 1 / span 2;
+.self-portrait > img {
+  max-width: 100vw;
+  height: auto;
 }
 
 .bio-content {
-  grid-column: 2 / span 10;
-  grid-row: 3;
+  margin-top: 60px;
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.bio-content-header {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  font-size: 50px;
+  /* padding: 10px; */
+  color: var(--red);
+  /* padding-left: 80px; */
+  /* padding-top: 40px; */
+}
+
+.bio-content-body {
+  grid-row: 2 /span 3;
+  grid-column: 2 / span 5;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  display:flex;
+  align-items: center;
+}
+
+#bio {
+  margin-left: 30%;
+  margin-right: 100px;
+  font-size: 20px;
 }
 
 .skillset-container {
-  grid-row: 5 / span 6;
-  grid-column: 2 / span 10;
+  grid-column: 3;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(4, auto);
@@ -73,19 +99,22 @@
 }
 
 #skill-text-container {
-  grid-row: 1;
-  grid-column: 1 / span 4;
+  padding: 10px;
+  text-align: center;
 }
 
 
 
 /* Habit Section Styling */
 .habits {
+  margin-top: 40px;
+  grid-column: 3;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
 .image-gallery {
+  grid-column: 3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -112,3 +141,11 @@
   grid-column: 3 / 4;
 }
 
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+
+}
+
+@media (min-width: 960px) {
+  
+}

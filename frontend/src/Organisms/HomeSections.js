@@ -7,27 +7,27 @@ const SECTIONS = [
   {
     title: 'ABOUT',
     route: '/about',
-    color: 'var(--darkpurple)'
+    color: 'var(--red)'
   },
   {
     title: 'PORTFOLIO',
     route: '/portfolio',
-    color: 'var(--orangered)'
+    color: 'var(--skin)'
   },
   {
     title: 'STYLES',
     route: '/styles',
-    color: 'var(--teal)'
+    color: 'var(--lightergray)'
   },
   {
     title: 'BLOG',
     route: '/blog',
-    color: 'var(--yellow)'
+    color: 'var(--navy)'
   },
   {
     title: 'CONTACT',
     route: '/contact',
-    color: 'var(--lightergray)'
+    color: 'var(--teal)'
   }
 ]
 

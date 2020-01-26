@@ -15,7 +15,7 @@ const StylesGrid = (props) => {
   return(
     <div className='styles-grid-container'>
 
-      <PageHeader title='Styles' />
+      <PageHeader title='Styles'  color='var(--lightergray)'/>
       
       {/* TODO: Eventually it's own js file */}
       <div className='styles-body'></div>

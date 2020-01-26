@@ -6,22 +6,52 @@
   --lightergray:  #a8a8a8;
   --lightgray:    #6F7D8C;
   --gray:         #454851;
-  --black:        #020202;
-  --brown:        #22181C;
-  --darkpurple:   #A18276;
+  --black:        #1E1E24;
+  --brown:        #22181c;
+  --purple:       #4B3F72;
   --blue:         #457B9D;
-  --teal:         #78a8a8;
-  --white:        #FBF2C0;
-  --yellow:       #d8a860;
-  --orangered:    #d86060;
-  --red:          #CA2E55;
+  --navy:         #111D4A;
+  --teal:         #A9DDD6;
+  --white:        #FFF8F0;
+  --orange:       #C9672E;
+  --pink:         #FF7575;
+  --red:          #92140C;
+  --skin:         #FFCF99;
+}
+
+#root {
+  cursor: default;
+  touch-action: none;
 }
 
 /* Two important CSS properties to set for full height pages */
 html { height: 100%; }
 body { min-height: 100%; }
 
+.cursor {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events:none;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background: #cb4b16;
+  border-radius: 80%;
+  backface-visibility: hidden;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

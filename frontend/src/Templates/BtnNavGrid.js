@@ -16,20 +16,24 @@ const BtnNavGrid = (props) => {
   const toggleHandler = () => {
     setToggle(!isToggled);
     document.getElementById('sidebar').classList.toggle('is-in');
+    // TODO: Change the nav-icon contents to color white
+    // document.getElementById('nav-icon-container').style.color('var(--white)')
   };
 
   return (
     <React.Fragment>
+
       <div className='nav-btn-group'>
 
       </div>
-      <div className='nav-icon-container'>
+      
+      <div className='nav-icon-container' id='nav-icon-container'>
         <div className='nav-icon' onClick={toggleHandler} onMouseEnter={toggleHandler}>
           <NavIconBtn>&#9776;</NavIconBtn>
         </div>
         <div className="page-title">
           <p>
-            MJB.
+            MJB
           </p>
         </div>
       </div>

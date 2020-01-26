@@ -19,12 +19,18 @@ import PageDNE from './Pages/PageDNE'
 import Styles from './Pages/Styles';
 
 function App() {
+  const handleMouseOver = (e) => {
+    // TODO: Show coordinates of the cursor
+    // TODO: Show Circle following mouse
+    // TODO: Add delay to the div following of the mouse
+  }
+
   return (
     <Router>
       {/* <HorizNavGrid /> */}
       <BtnNavGrid />
 
-      <main>
+      <main onMouseOver={handleMouseOver}>
         <Switch>
           <Route exact path='/'>
             <Welcome />
@@ -53,7 +59,6 @@ function App() {
           <Route path='/styles'>
             <Styles />
           </Route>
-
           
           <Route path='/pageDNE' component={PageDNE} />
           <Redirect to='/pageDNE' />

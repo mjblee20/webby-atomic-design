@@ -35,7 +35,7 @@ const BlogGrid = () => {
   return(
     <div className='blog-page-container'>
 
-      <PageHeader title='Blog' />
+      <PageHeader title='Blog' color='var(--navy)'/>
 
         {/* TODO: Eventually it's own Compound js file */}
         <div className='blog-posts-container'>

@@ -30,10 +30,3 @@
   height: 160px;
   background: transparent;
 }
-
-.footer-container {
-  grid-row: 3;
-  background: transparent;
-  justify-content: center;
-  text-align: center;
-}

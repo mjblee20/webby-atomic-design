@@ -1,6 +1,6 @@
 .footer-container {
-  grid-row: 3;
-  grid-column: 1 /span 12;
+  grid-row-end: auto;
+  grid-column: 1 /span 5;
   background: transparent;
   display: flex;
   justify-content: center;
