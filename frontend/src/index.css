@@ -26,7 +26,10 @@
 
 /* Two important CSS properties to set for full height pages */
 html { height: 100%; }
-body { min-height: 100%; }
+body { 
+  min-height: 100%; 
+  background: var(--white);
+}
 
 .cursor {
   position: fixed;

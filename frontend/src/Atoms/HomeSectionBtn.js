@@ -8,6 +8,10 @@ const HomeSectionBtn = (props) => {
     <LiftLinkToButton 
       className='home-section-btn' 
       route={props.route}
+      style={{
+        color: 'var(--black)',
+        textShadow: '2px 2px var(--white)'
+      }}
     >
       {props.title}
     </LiftLinkToButton>
